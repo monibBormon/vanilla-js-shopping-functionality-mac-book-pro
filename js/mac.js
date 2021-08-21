@@ -26,7 +26,7 @@ function calcTotal() {
     let memory = parseFloat(document.getElementById('memory-cost').innerText);
     let storage = parseFloat(document.getElementById('storage-cost').innerText);
     let delivery = parseFloat(document.getElementById('delivery-cost').innerText);
-
+    // calculation
     let couponInput = document.getElementById('coupon-input');
     let couponValue = couponInput.value;
     let discount = 20 / 100;
@@ -35,7 +35,6 @@ function calcTotal() {
     console.log(totalValue);
     // here is the coupon code
     if (couponValue === 'stevekaku') {
-        document.getElementById('total').innerText = totalValue;
         document.getElementById('last-total').innerText = totalValue;
     } else {
         document.getElementById('total').innerText = totalC;

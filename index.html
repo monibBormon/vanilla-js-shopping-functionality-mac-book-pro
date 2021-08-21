@@ -60,7 +60,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="mac-book-price">
-                                        <table>
+                                        <table class="text-dark fw-bold">
                                             <tr>
                                                 <td>Best Price</td>
                                                 <td>$<span id="single-cost">1299</span></td>
@@ -77,18 +77,19 @@
                                                 <td>Delivery charge </td>
                                                 <td>$<span id="delivery-cost">0</span></td>
                                             </tr>
-                                            <tr class="border-top">
+                                            <tr class="border-top border-dark">
                                                 <td>Total Price</td>
                                                 <td>$<span id="total">1299</span></td>
                                             </tr>
                                         </table>
                                     </div>
-                                    <div class="mac-promo-code">
+                                    <div class="mac-promo-code mt-2">
                                         <h4>Add promo code</h4>
                                         <div class="coupon">
                                             <input class="form-control w-75" id="coupon-input" type="text"
                                                 placeholder=" 'stevekaku' for 20% discount">
                                             <button onclick="calcTotal()" class="btn btn-danger ">Apply</button>
+                                            <p style="display: none;" id="coupon-error">Enter a valid coupon code.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +101,7 @@
                 <hr>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="last-total">
+                        <div class="last-total text-center">
                             <h3>Total: $<span id="last-total">1299</span></h3>
                         </div>
                     </div>
