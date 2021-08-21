@@ -9,10 +9,101 @@
     <!-- bootstrap cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- main style  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+    <!-- main start -->
+    <main>
+        <section class="pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="mac-book">
+                            <img class="w-100" src="images/mac.png" alt="mac-book">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="mac-description">
+                            <h2>Customize your blue 24-inch <br> iMac with Apple M1 chip.</h2>
+                            <p>Apple M1 chip with 8 core cpu with 4 performance cores and 4 efficiency cores, 7-core
+                                gpu, and 16-core neutral engine 8gb unified memory 256gb SSD storage two thunderbolt /
+                                usb 4 ports magic mouse magic keyboard - us english.</p>
+                            <div class="mac-ram mb-4">
+                                <h4>memory</h4>
+                                <button onclick="basicCost('memory','ram1')" class="btn btn-light">8Gb unified
+                                    memory</button>
+                                <button onclick="basicCost('memory','ram2')" class="btn btn-light">16G unified
+                                    memory</button>
+                            </div>
+                            <div class="mac-storage mb-4">
+                                <h4>storage</h4>
+                                <button onclick="basicCost('storage','store1')" class="btn btn-light">256gb SSD
+                                    storage</button>
+                                <button onclick="basicCost('storage','store2')" class="btn btn-light">512gb SSD
+                                    storage</button>
+                                <button onclick="basicCost('storage','store3')" class="btn btn-light">1Tb SSD
+                                    storage</button>
+                            </div>
+                            <div class="delivery-option mb-4">
+                                <h4>choose delivery-option</h4>
+                                <button onclick="basicCost('delivery','delivery1')" class="btn btn-light">Friday, August
+                                    25 Free Prime Delivery</button>
+                                <button onclick="basicCost('delivery','delivery2')" class="btn btn-light">Friday, August
+                                    21 Delivery charge $20</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="mac-book-price">
+                                        <table>
+                                            <tr>
+                                                <td>Best Price</td>
+                                                <td>$<span id="single-cost">1299</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Extra memory cost</td>
+                                                <td>$<span id="memory-cost">0</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Extra storage cost</td>
+                                                <td>$<span id="storage-cost">0</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delivery charge </td>
+                                                <td>$<span id="delivery-cost">0</span></td>
+                                            </tr>
+                                            <tr class="border-top">
+                                                <td>Total Price</td>
+                                                <td>$<span id="total">1299</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="mac-promo-code">
+                                        <h4>Add promo code</h4>
+                                        <div class="coupon">
+                                            <input class="form-control w-75" id="coupon-input" type="text"
+                                                placeholder=" 'stevekaku' for 20% discount">
+                                            <button onclick="calcTotal()" class="btn btn-danger ">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="last-total">
+                            <h3>Total: $<span id="last-total">1299</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 

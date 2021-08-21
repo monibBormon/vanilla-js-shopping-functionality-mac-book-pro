@@ -1,0 +1,15 @@
+/* -----
+default css 
+-----------------*/
+
+h4{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+td{
+    padding-right: 40px;
+}
+.coupon .form-control{
+    display: inline-block;
+}
